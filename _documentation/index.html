@@ -1,0 +1,202 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Documentation | Aether Themes</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+		body { background: #fff; color: #232527; }
+		a, a:visited  { color: #19e6a5; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt"><img src="assets/images/logo.png"></h3>
+		
+		<hr>
+		
+		<h1 class="center">Crisp.</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 19/10/2012<br>
+					By: Aether Themes<br>
+					Email: <a href="mailto:contact@aetherthemes.com">contact@aetherthemes.com</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing our theme. If you have any questions that are beyond the scope of this help file, please feel free to visit the dedicated support forum <a href="http://aether.ticksy.com">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#installation">Installation</a></li>
+			<li><a href="#customization">Customization</a></li>
+			<li><a href="#compatability">Compatability</a></li>
+			<li><a href="#credits">Sources and Credits</a></li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="installation"><strong>A) Installation</strong></h3>
+		<p>Installation is pretty easy. All you need to do is unzip the file, and upload the contents to your server via FTP.</p>
+		
+		<hr>
+
+		<h3 id="customization"><strong>B) Customization</strong> - <a href="#toc">top</a></h3>
+
+		<p>You can custom pretty much everything in the theme.</p>
+		
+		<h3><strong>File Structure</strong></h3>
+		
+		<h6>HTML</h6>
+		
+		<p>In the root directory you will find 11 <tt>.html</tt> files for the main designed pages - the home page (and alternative), the portfolio, the blog and the contact page.</p>
+		
+		<h6>CSS</h6>
+		
+		<p>In the <tt>css</tt> dir you can find:
+			<ul>
+				<li>reset.css - a basic reset file for the elements</li>
+				<li>layout.css - the file responsible for the responsive grid</li>
+				<li>slider.css - styling for the home page slider (should you choose to use it reference it in the <code>&lthead&gt</code> of the chosen page.</li>
+				<li>project-slider.css - styling for the portfolio project page slider (should you choose to use it reference it in the <code>&lthead&gt</code> of the chosen page.</li>
+				<li>elements.css - here is the styling of the shortcoded elements such as buttons, lists etc.</li>
+				<li>style.css - this is the master css file, here is the basic styling for each page and imports of the other css files.</li>
+			</ul>
+		</p>
+		
+		<h6>Images</h6>
+		
+		<p> The images such as icons and thumbnails can be found in the <tt>images</tt> directory, and in the <tt>css</tt> folder there is another directory for images, used for short-coded elements in the theme and images referenced in the CSS and not in the HTML, which are irrelevant to content.</p>
+		
+		<h6>Javascript</h6>
+		
+		<p>There are two files included - the custom.js and the plugins.js. In the custom file there are various setups for the plugins and custom scripts for the navigation and contact form. In the plugins file there are the minified versions of the plguins used - properly referenced for you to check out the sites should you need some help with those.</p>
+		
+		<h3><strong>Content</strong></h3>
+		
+		<p>The HTML is well structured with comments on every section you need to edit, just look for the <code>&lt!--  --&gt</code> tags in the code to see the name of the section you are editing.</p>
+		<p>If you make changes to the overall positioning of the elements you need to familiarise yourself with the grid used when creating the theme. Crisp is built on Skeleton which is a 16 column grid, you can learn more about it <a href="http://www.getskeleton.com" target="_blank">here</a>.</p>
+		
+		<h3><strong>Common Elements</strong></h3>
+		
+		<p>Here is the guide on how to custom the common elements recurring in all pages.</p>
+		
+		<h6>Fonts</h6>
+		
+		<p>The fonts used are from the Google Web font library. You can change the font by editing the url provided in the HTML where marked and reflect that change in the css.</p>
+		
+		<h6>Images</h6>
+		
+		<p>To implement images you need to familiarize yourself with the retina support. The code responsible for retina images automatically detects whether the site is being viewed from an retina enabled device and replaces the standard images referenced in the HTML code with retina ones. To achieve this properly you need two sets of images ready for the elements such as icons, the logo etc. The former being the normal file (for example <tt>logo.png</tt>) and the latter the retina image (exactly twice the resolution of the original) with  Apple's prescribed high-resolution modifier (@2x) so in this case <tt>logo@2x.png</tt>. Both images should be placed in the same directory and in the HTML <code>&ltimg&gt</code> tag you need to set the width and height of the original image.</p>
+		
+		<p>For the thumbnails it would be easier to keep the aspect ratio provided for the images I have set up for the theme, but should you wish to deviate from this just make sure that they are at least 420px wide.</p>
+		
+		<h6>Navigation</h6>
+		
+		<p>The theme utilizes two navigation bars, one when viewed on a larger device ( i.e. PC, Laptop ) and the other visible only to mobile devices.</p>
+		
+		<p>Making a change in the navigation should be reflected in the mobile navigation, all you need to do is make sure you follow the same structure provided when making changes. Navigation items are list items of an unordered list and the drop-down is a separate unordered list featured in the list item you wish to assign a drop-down to.</p>
+		
+		<h6>Footer</h6>
+		
+		<p>The Footer has another navigation associated with it. You need to reflect changes made to the main navigation here as well.</p>
+		
+		<h6>Sidebar</h6>
+		
+		<p>On some pages there is a sidebar that includes twitter feed and flickr feed. To set up the feeds just open <tt>js/custom.js</tt> and place your twitter username and flickr ID where marked in the file.</p>
+		
+		<h6>Slider</h6>
+		
+		<p>The setup for the slider is in a different document called slider.txt located in the _documentation folder.</p>
+		
+		<h6>Portfolio Filters</h6>
+		
+		<p>In the portfolio page there is an option to set up filters. To customize it just make sure to set up your categories and reflect those as a clas to the thumbnail list item. For instance if you add <tt>super design</tt> as a category to the filter list, add the class <tt>super-design</tt> to the thumbnails you wish to be associated with this category.</p>
+		
+		<h6>Single-Project Slider</h6>
+		
+		<p>To set up the slider, just replace the images provided in the images/project folder with your own (make sure to create thumbnail versions of those too).</p>
+		
+		<h6>Email Form</h6>
+		
+		<p>To set up the form you need to open <tt>post.php</tt> and place your email where marked in the file and you are good to go.</p>
+		
+		<h6>Shortcodes</h6>
+		
+		<p>You can check out the HTML code behind the features page and see snippets of different styled elements: accordion, tabs, alerts, info box, lists, dropcaps, blockquote and buttons.</p>
+		  
+		<hr>
+		
+		<h3 id="compatability"><strong>C) Compatability</strong> - <a href="#toc">top</a></h3>
+		
+		<p>This template was tested in a vast majority of browsers.</p>
+		
+		<p>If you found a bug, please use the theme comment section or report it to us describing:</p>
+		
+		<ol>
+			<li>Operating System</li>
+			<li>Browser version</li>
+			<li>What is needed to replicate it</li>
+		</ol>
+		
+		<h4><strong>Compatible with:</strong></h4>
+		
+		<ul>
+			<li>Internet Explorer 8+</li>
+			<li>Firefox 3.6+</li>
+			<li>Safari 4+</li>
+			<li>Chrome</li>
+			<li>Opera</li>
+		</ul>
+		
+		<p>This theme is fully responsive and compatible with all major devices:</p>
+		
+		<ul>
+			<li>Large and small display</li>
+			<li>Smart phones</li>
+			<li>Tablets</li>
+		</ul>
+		
+		<img src="assets/images/responsive.png" alt="" />
+		
+		<hr class="space">
+		<hr>
+		
+		<h3 id="credits"><strong>D) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+		
+		<ul>
+			<li>jQuery Flickr Plugin - <a href="http://www.newmediacampaigns.com/page/jquery-flickr-plugin">http://www.newmediacampaigns.com/page/jquery-flickr-plugin</a></li>
+			<li>Tweetable - <a href="http://theodin.co.uk/blog/jquery/tweetable-1-6-launched.html">http://theodin.co.uk/blog/jquery/tweetable-1-6-launched.html</a></li>
+			<li>Flexslider - <a href="http://www.woothemes.com/flexslider/">http://www.woothemes.com/flexslider/</a></li>
+			<li>Images - <a href="http://behance.net/">Behance.net</a></li>
+		</ul>
+		
+		<hr>
+		
+		<p>Once again, thank you so much for purchasing this theme. As noted at the beginning, we'd be glad to help you if you have any questions relating to this theme. No guarantees, but we'll do our best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p> 
+		
+		<img src="assets/images/logo-small.png">
+		<hr class="space">
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>

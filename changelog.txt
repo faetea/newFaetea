@@ -1,0 +1,12 @@
+/* Crisp */
+Theme by Aether_
+Created: Friday, 19 October 2012
+
+
+/* v1.0 */
+
+- initial release
+
+/* v1.01 */
+
+- fixed a bug with portfolio filtering
