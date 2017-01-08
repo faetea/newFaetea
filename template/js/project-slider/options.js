@@ -1,6 +1,7 @@
 jQuery(window).load(function() {
   jQuery('.flexslider').flexslider({
     animation: "slide",
-    controlNav: "thumbnails"
+    controlNav: "thumbnails",
+    slideshow: false  // turns off slide transition
   });
 });
